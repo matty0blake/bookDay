@@ -1,0 +1,101 @@
+/* about three */
+
+@media screen and (max-width:950px) and (min-width:300px) {
+    /* nav burger menu show */
+    /* ===============about */
+    .load {
+        width: 50%
+    }
+    
+    .about_button0{
+        font-size: 100%;
+    }
+    
+    #nav_burger_menu {
+        display: block;
+    }
+    /*  header */
+    header {
+        display: flex;
+        height: 10%;
+    }
+    .book_logo {
+        height: 100%;
+        width: 100%;
+    }
+    .nav {
+        position: absolute;
+        display: flex;
+        height: 100vh;
+        width: 75%;
+        right: 0%;
+        justify-content: flex-end;
+        transition: all 1s;
+        background-color: transparent;
+        clip-path: circle(20% at 90% 0%);
+    }
+    .nav_ul {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%;
+        justify-content: space-evenly;
+        align-self: center;
+    }
+    .nav_li {
+        justify-self: flex-start;
+        margin: 0 auto;
+    }
+    .book_logo {
+        width: 40%;
+    }
+    /* Nav open */
+    .nav_open {
+        background-color: var(--header_color);
+        transition: all 1s;
+        clip-path: circle(200% at 0% 0%);
+    }
+    /*========== about one*/
+    .about_button0 {
+        width: 50%;
+        height: 25%
+    }
+    /*============ about two */
+    .about_two {
+        grid-template-columns: 10% 1fr 10%;
+        grid-template-rows: 10% 1fr 1fr 10%;
+    }
+    .about_two_left {
+        grid-column: 2 / 3;
+        grid-row: 2/3;
+    }
+    .about_two_left p {
+        text-align: center;
+        width: 100%;
+        height: 80%;
+    }
+    .about_two_right {
+        grid-column: 2 /3;
+        grid-row: 3 /4;
+    }
+    /* ============ about three */
+    .about_three {
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    .futures {
+        width: 50%;
+        height: 25%;
+        position: relative;
+        border-radius: 0;
+        margin-top: 0;
+        margin-bottom: 10%;
+    }
+    .futures h1,
+    .futures p {
+        margin-top: 0;
+        margin-bottom: 5%;
+    }
+}

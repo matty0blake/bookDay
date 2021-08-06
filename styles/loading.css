@@ -1,0 +1,35 @@
+.loading {
+    display: flex;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(12, 12, 12);
+}
+
+.load {
+    position: relative;
+    width: 15%;
+    height: 1%;
+    border-radius: 20px;
+    background-color: grey;
+}
+
+.filler {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: white;
+    transition: all 1s;
+    /* animation: filling 5s; */
+}
+
+@keyframes filling {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
